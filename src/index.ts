@@ -1,4 +1,4 @@
-import genericsBasicSample from './components/generics';
+import genericsBasicSample from './generics/basic';
 
 console.log('hello');
 

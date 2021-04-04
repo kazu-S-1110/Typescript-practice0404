@@ -3,6 +3,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var generics_1 = __importDefault(require("./components/generics"));
+var basic_1 = __importDefault(require("./generics/basic"));
 console.log('hello');
-generics_1.default();
+basic_1.default();
