@@ -1,2 +1,4 @@
 import genericsBasicSample from './generics/basic';
-genericsBasicSample();
+import genericsAdvancedSample from './generics/advanced';
+// genericsBasicSample();
+genericsAdvancedSample();
