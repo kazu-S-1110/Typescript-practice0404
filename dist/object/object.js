@@ -27,5 +27,12 @@ function objectSample() {
     character.age = 30;
     // character.lastName = "Noel"  readonlyのため不可
     console.log(character);
+    // インデックスシグネチャ
+    var capitals = {
+        Japan: "Tokyo",
+        USA: "Washington,DC"
+    };
+    capitals.China = "Beijing";
+    console.log(capitals);
 }
 exports.default = objectSample;

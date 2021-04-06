@@ -35,4 +35,15 @@ export default function objectSample() {
   character.age = 30
   // character.lastName = "Noel"  readonlyのため不可
   console.log(character)
+
+  // インデックスシグネチャ
+  const capitals: {
+    [countryName:string] :string
+  } = {
+    Japan: "Tokyo",
+    USA:"Washington,DC"
+  }
+  capitals.China = "Beijing"
+
+  console.log(capitals)
 }
