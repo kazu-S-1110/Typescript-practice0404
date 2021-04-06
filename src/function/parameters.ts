@@ -28,3 +28,5 @@ export const sumProductsPrice = (...productPrice: number[]): number => {
     return prevTotal + productPrice;
   });
 };
+
+
