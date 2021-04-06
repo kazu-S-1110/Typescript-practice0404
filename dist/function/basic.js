@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.alwaysThrowError = exports.logMessage4 = exports.logMessage3 = exports.logMessage2 = exports.logMessage = void 0;
+exports.logMessage6 = exports.logMessage5 = exports.alwaysThrowError = exports.logMessage4 = exports.logMessage3 = exports.logMessage2 = exports.logMessage = void 0;
 // アロー関数
 var logMessage = function (message) {
     console.log(message);
@@ -23,3 +23,7 @@ var alwaysThrowError = function (message) {
     throw new Error(message);
 };
 exports.alwaysThrowError = alwaysThrowError;
+var logMessage5 = function (message) { return console.log(message); };
+exports.logMessage5 = logMessage5;
+var logMessage6 = function (message) { return console.log(message); };
+exports.logMessage6 = logMessage6;

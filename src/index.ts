@@ -6,12 +6,15 @@ import {
   isUserSignedIn2,
   sumProductsPrice,
 } from './function/parameters';
+import 　objectSample  from './object/object'
 // genericsBasicSample();
 // genericsAdvancedSample();
 // logMessage('Hello world!');
-isUserSignedIn('ABC', 'Jack');
-isUserSignedIn('ddd');
-isUserSignedIn2('ABC');
-const arrayNum = [10, 20, 30, 40, 50];
-const sum = sumProductsPrice(60, ...arrayNum);
-console.log(sum);
+// isUserSignedIn('ABC', 'Jack');
+// isUserSignedIn('ddd');
+// isUserSignedIn2('ABC');
+// const arrayNum = [10, 20, 30, 40, 50];
+// const sum = sumProductsPrice(60, ...arrayNum);
+// console.log(sum);
+objectSample()
+
