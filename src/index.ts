@@ -6,7 +6,8 @@ import {
   isUserSignedIn2,
   sumProductsPrice,
 } from './function/parameters';
-import 　objectSample  from './object/object'
+import objectSample from './object/object'
+import typeAliasSample  from './object/alias'
 // genericsBasicSample();
 // genericsAdvancedSample();
 // logMessage('Hello world!');
@@ -17,4 +18,4 @@ import 　objectSample  from './object/object'
 // const sum = sumProductsPrice(60, ...arrayNum);
 // console.log(sum);
 objectSample()
-
+typeAliasSample()

@@ -4,6 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var object_1 = __importDefault(require("./object/object"));
+var alias_1 = __importDefault(require("./object/alias"));
 // genericsBasicSample();
 // genericsAdvancedSample();
 // logMessage('Hello world!');
@@ -14,3 +15,4 @@ var object_1 = __importDefault(require("./object/object"));
 // const sum = sumProductsPrice(60, ...arrayNum);
 // console.log(sum);
 object_1.default();
+alias_1.default();
