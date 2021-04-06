@@ -17,5 +17,15 @@ function objectSample() {
         name: "USA"
     };
     console.log(country);
+    // オプショナルとreadonly
+    var character = {
+        age: 25,
+        lastName: "Lamy",
+        firstName: "Yukihana",
+        gender: "female"
+    };
+    character.age = 30;
+    // character.lastName = "Noel"  readonlyのため不可
+    console.log(character);
 }
 exports.default = objectSample;
