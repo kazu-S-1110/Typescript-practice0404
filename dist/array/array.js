@@ -11,5 +11,22 @@ function arraySample() {
     even.push(10);
     // even.push("dd") 文字列型だからできないよ
     console.log(even);
+    // 合併型（Union）
+    var ids = ["Lamy", 123];
+    ids.push("Noel");
+    ids.push(456);
+    // ids.push(true) 真偽値だからできないよ
+    console.log(ids);
+    // 配列の型推論
+    var generateSomeArray = function () {
+        var _someArray = []; //any
+        _someArray.push(123); //number[]
+        _someArray.push("peko"); //(string|number)[]
+        return _someArray;
+    };
+    var someArray = generateSomeArray();
+    someArray.push(456); //型宣言（アノテーション）をしなくても型定義されている
+    // someArray.push(true) 真偽値だからできない
+    console.log(someArray);
 }
 exports.default = arraySample;
