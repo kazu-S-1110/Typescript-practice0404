@@ -29,4 +29,6 @@ export default function arraySample() {
   someArray.push(456) //型宣言（アノテーション）をしなくても型定義されている
   // someArray.push(true) 真偽値だからできない
   console.log(someArray)
+
+  
 }

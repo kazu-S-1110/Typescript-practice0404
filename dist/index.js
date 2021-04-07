@@ -6,4 +6,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // objectSample()
 // typeAliasSample()
 var array_1 = __importDefault(require("./array/array"));
+var tuple_1 = __importDefault(require("./array/tuple"));
 array_1.default();
+tuple_1.default();
