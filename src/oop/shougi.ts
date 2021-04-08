@@ -7,6 +7,22 @@ type Player = 'first' | 'second';
 // 駒の位置を表すクラス
 class Position {
   constructor(private suji: Suji, private dan: Dan) {}
+
+// パラメータに渡された位置と現在の位置を比較するメソッド
+  distanceFrom(position: Position, player: Player) {
+    if(player === "first") {
+      return {
+        suji: Math.abs(position.suji - this.suji),
+        dan:Math.abs(Number(position.dan) - Number(this.dan))
+      }
+    } else {
+      return {
+        suji: Math.abs(position.suji - this.suji),
+        dan: -(Math.abs(Number(position.dan) - Number(this.dan))) //段（縦の位置）は正負反転
+      }
+    }
+  }
+  
 }
 
 abstract class Piece {
