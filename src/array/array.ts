@@ -30,5 +30,8 @@ export default function arraySample() {
   // someArray.push(true) 真偽値だからできない
   console.log(someArray)
 
-  
+  // イミュータブルな配列を作る(readonlyを付与する)
+  const commands: readonly string[] = ["git add", "git commit", "git push"]
+  // commands.push("git fetch") //追加不可
+  // commands[2] = "git pull" //書き込み不可
 }

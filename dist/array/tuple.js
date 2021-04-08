@@ -7,5 +7,9 @@ function tupleSample() {
     // response = [100,"Peko","Marin"] //個数オーバー
     // response = [400,114514] //型が違うからダメ
     console.log(response);
+    // 可変調引数を使ったタプル
+    var vtubers = ["peko", "sora", "miko"];
+    vtubers.push("botan");
+    console.log(vtubers);
 }
 exports.default = tupleSample;

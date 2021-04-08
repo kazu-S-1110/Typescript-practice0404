@@ -28,5 +28,9 @@ function arraySample() {
     someArray.push(456); //型宣言（アノテーション）をしなくても型定義されている
     // someArray.push(true) 真偽値だからできない
     console.log(someArray);
+    // イミュータブルな配列を作る(readonlyを付与する)
+    var commands = ["git add", "git commit", "git push"];
+    // commands.push("git fetch") //追加不可
+    // commands[2] = "git pull" //書き込み不可
 }
 exports.default = arraySample;

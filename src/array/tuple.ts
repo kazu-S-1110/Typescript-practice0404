@@ -5,4 +5,9 @@ export default function tupleSample() {
   // response = [100,"Peko","Marin"] //個数オーバー
   // response = [400,114514] //型が違うからダメ
   console.log(response)
+
+  // 可変調引数を使ったタプル
+  const vtubers: [string, ...string[]] =["peko", "sora", "miko"]
+  vtubers.push("botan")
+  console.log(vtubers)
 }
