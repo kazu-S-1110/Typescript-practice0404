@@ -17,12 +17,12 @@ import {
 // const sum = sumProductsPrice(60, ...arrayNum);
 // console.log(sum);
 
-import objectSample from './object/object'
-import typeAliasSample from './object/alias'
+import objectSample from './object/object';
+import typeAliasSample from './object/alias';
 // objectSample()
 // typeAliasSample()
 
-import arraySample from './array/array'
-import tupleSample from './array/tuple'
-arraySample()
-tupleSample()
+import arraySample from './array/array';
+import tupleSample from './array/tuple';
+// arraySample();
+// tupleSample();
