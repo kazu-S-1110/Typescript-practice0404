@@ -41,3 +41,11 @@ abstract class Piece {
   // 移動できるかどうかを判定するメソッド
   abstract canMoveTo(position: Position, player: Player): boolean; //メソッドにもabstractを付与できる。継承したクラスで使わせるため
 }
+
+class Osho extends Piece {
+  //canMoveToメソッドを具体的に実装する
+  canMoveTo(position: Position, player: Player): boolean {
+    const distance = this.position.distanceFrom(position, player)
+    return (distance.suji < 2 && distance.dan < 2) 
+  }
+}
