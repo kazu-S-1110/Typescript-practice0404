@@ -12,11 +12,6 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var Game = /** @class */ (function () {
-    function Game() {
-    }
-    return Game;
-}());
 // 駒の位置を表すクラス
 var Position = /** @class */ (function () {
     function Position(suji, dan) {
@@ -64,3 +59,15 @@ var Osho = /** @class */ (function (_super) {
     };
     return Osho;
 }(Piece));
+var Game = /** @class */ (function () {
+    function Game() {
+        this.pieces = Game.makePieces();
+    }
+    Game.makePieces = function () {
+        return [
+            new Osho("first", 5, "1"),
+            new Osho("second", 5, "9")
+        ];
+    };
+    return Game;
+}());
