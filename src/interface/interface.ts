@@ -32,3 +32,31 @@ const mabomabo: MaboMabo = {
   cal: 300,
   gram: 200,
 };
+
+//interface extends
+interface Book {
+  page: number;
+  title: string;
+}
+interface Magazine extends Book {
+  //継承元はタイプエイリアスでも可能
+  cycle: 'daily' | 'weekly' | 'monthly' | 'yearly';
+}
+const jump: Magazine = {
+  page: 500,
+  title: '週刊少年ジャンプ',
+  cycle: 'weekly',
+};
+// 継承元をタイプエイリアスで書いてみる
+type BookType = {
+  page: number;
+  title: string;
+};
+interface HandBook extends BookType {
+  theme: string;
+}
+const rububu: HandBook = {
+  page: 200,
+  title: 'るぶぶ',
+  theme: '旅行',
+};
