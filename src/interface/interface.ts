@@ -60,3 +60,18 @@ const rububu: HandBook = {
   title: 'るぶぶ',
   theme: '旅行',
 };
+// implementsを使ってclassに型を定義する
+class Comic implements Book {
+  page: number
+  title: string
+  constructor(page: number, title: string,private publishYear:string) {
+    this.page = page
+    this.title = title
+  }
+  getPublishYear() {
+    return `${this.title} published in ${this.publishYear} `
+  }
+}
+
+const popularComic = new Comic(300, 'OnePiece', "1980")
+console.log(popularComic.getPublishYear())
