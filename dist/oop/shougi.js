@@ -7,6 +7,8 @@ var __extends = (this && this.__extends) || (function () {
         return extendStatics(d, b);
     };
     return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -20,16 +22,16 @@ var Position = /** @class */ (function () {
     }
     // パラメータに渡された位置と現在の位置を比較するメソッド
     Position.prototype.distanceFrom = function (position, player) {
-        if (player === "first") {
+        if (player === 'first') {
             return {
                 suji: Math.abs(position.suji - this.suji),
-                dan: Math.abs(Number(position.dan) - Number(this.dan))
+                dan: Math.abs(Number(position.dan) - Number(this.dan)),
             };
         }
         else {
             return {
                 suji: Math.abs(position.suji - this.suji),
-                dan: -(Math.abs(Number(position.dan) - Number(this.dan))) //段（縦の位置）は正負反転
+                dan: -Math.abs(Number(position.dan) - Number(this.dan)), //段（縦の位置）は正負反転
             };
         }
     };
@@ -55,7 +57,7 @@ var Osho = /** @class */ (function (_super) {
     //canMoveToメソッドを具体的に実装する
     Osho.prototype.canMoveTo = function (position, player) {
         var distance = this.position.distanceFrom(position, player);
-        return (distance.suji < 2 && distance.dan < 2);
+        return distance.suji < 2 && distance.dan < 2;
     };
     return Osho;
 }(Piece));
@@ -64,10 +66,7 @@ var Game = /** @class */ (function () {
         this.pieces = Game.makePieces();
     }
     Game.makePieces = function () {
-        return [
-            new Osho("first", 5, "1"),
-            new Osho("second", 5, "9")
-        ];
+        return [new Osho('first', 5, '1'), new Osho('second', 5, '9')];
     };
     return Game;
 }());

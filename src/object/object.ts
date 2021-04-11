@@ -1,36 +1,36 @@
-export default function objectSample() {
-  const a: object = {
-    name: "Jack",
-    age:20
-  }
+export default function objectSample(): void {
+  // const a: object = {
+  //   name: "Jack",
+  //   age:20
+  // }
   // a.name  <=アクセスできない、型を指定してあげる必要あり
 
   // オブジェクトリテラル記法で型定義
   let country: {
     language: string
-    name:string
+    name: string
   } = {
-    language: "Jap",
-    name:"Japan"
+    language: 'Jap',
+    name: 'Japan',
   }
   console.log(country)
   country = {
-    language: "En",
-    name:"USA"
+    language: 'En',
+    name: 'USA',
   }
   console.log(country)
 
   // オプショナルとreadonly
   const character: {
-    age?: number 
-    readonly lastName: string　//readonlyは上書き不可
+    age?: number
+    readonly lastName: string //readonlyは上書き不可
     firstName: string
-    gender: "male" | "female"
+    gender: 'male' | 'female'
   } = {
     age: 25,
-    lastName: "Lamy",
-    firstName: "Yukihana",
-    gender:"female"
+    lastName: 'Lamy',
+    firstName: 'Yukihana',
+    gender: 'female',
   }
   character.age = 30
   // character.lastName = "Noel"  readonlyのため不可
@@ -38,12 +38,12 @@ export default function objectSample() {
 
   // インデックスシグネチャ
   const capitals: {
-    [countryName:string] :string
+    [countryName: string]: string
   } = {
-    Japan: "Tokyo",
-    USA:"Washington,DC"
+    Japan: 'Tokyo',
+    USA: 'Washington,DC',
   }
-  capitals.China = "Beijing"
+  capitals.China = 'Beijing'
 
   console.log(capitals)
 }

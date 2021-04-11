@@ -9,9 +9,7 @@ function genericsAdvancedSample() {
         }
         return result;
     };
-    var numbers = mapStringToNumbers(['123', '456', '789'], function (item) {
-        return Number(item);
-    });
+    var numbers = mapStringToNumbers(['123', '456', '789'], function (item) { return Number(item); });
     console.log(numbers);
     var mapNumbersToStrings = function (array, fn) {
         var result = [];

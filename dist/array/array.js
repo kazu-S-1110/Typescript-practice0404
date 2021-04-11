@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 function arraySample() {
     // シンプルな型定義
-    var colors = ["red", "blue"];
-    colors.push("yellow");
+    var colors = ['red', 'blue'];
+    colors.push('yellow');
     // colors.push(123) 数値型だからできないよ
     console.log(colors);
     // 別の配列の型定義方法
@@ -12,8 +12,8 @@ function arraySample() {
     // even.push("dd") 文字列型だからできないよ
     console.log(even);
     // 合併型（Union）
-    var ids = ["Lamy", 123];
-    ids.push("Noel");
+    var ids = ['Lamy', 123];
+    ids.push('Noel');
     ids.push(456);
     // ids.push(true) 真偽値だからできないよ
     console.log(ids);
@@ -21,7 +21,7 @@ function arraySample() {
     var generateSomeArray = function () {
         var _someArray = []; //any
         _someArray.push(123); //number[]
-        _someArray.push("peko"); //(string|number)[]
+        _someArray.push('peko'); //(string|number)[]
         return _someArray;
     };
     var someArray = generateSomeArray();
@@ -29,8 +29,9 @@ function arraySample() {
     // someArray.push(true) 真偽値だからできない
     console.log(someArray);
     // イミュータブルな配列を作る(readonlyを付与する)
-    var commands = ["git add", "git commit", "git push"];
+    var commands = ['git add', 'git commit', 'git push'];
     // commands.push("git fetch") //追加不可
     // commands[2] = "git pull" //書き込み不可
+    console.log(commands);
 }
 exports.default = arraySample;

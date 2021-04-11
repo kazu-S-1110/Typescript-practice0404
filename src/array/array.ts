@@ -1,7 +1,7 @@
-export default function arraySample() {
+export default function arraySample(): void {
   // シンプルな型定義
-  const colors: string[] = ["red", "blue"]
-  colors.push("yellow")
+  const colors: string[] = ['red', 'blue']
+  colors.push('yellow')
   // colors.push(123) 数値型だからできないよ
   console.log(colors)
 
@@ -12,8 +12,8 @@ export default function arraySample() {
   console.log(even)
 
   // 合併型（Union）
-  const ids: (string | number)[] = ["Lamy", 123]
-  ids.push("Noel")
+  const ids: (string | number)[] = ['Lamy', 123]
+  ids.push('Noel')
   ids.push(456)
   // ids.push(true) 真偽値だからできないよ
   console.log(ids)
@@ -22,7 +22,7 @@ export default function arraySample() {
   const generateSomeArray = () => {
     const _someArray = [] //any
     _someArray.push(123) //number[]
-    _someArray.push("peko") //(string|number)[]
+    _someArray.push('peko') //(string|number)[]
     return _someArray
   }
   const someArray = generateSomeArray()
@@ -31,7 +31,8 @@ export default function arraySample() {
   console.log(someArray)
 
   // イミュータブルな配列を作る(readonlyを付与する)
-  const commands: readonly string[] = ["git add", "git commit", "git push"]
+  const commands: readonly string[] = ['git add', 'git commit', 'git push']
   // commands.push("git fetch") //追加不可
   // commands[2] = "git pull" //書き込み不可
+  console.log(commands)
 }
