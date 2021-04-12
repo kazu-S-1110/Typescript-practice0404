@@ -7,8 +7,6 @@ var __extends = (this && this.__extends) || (function () {
         return extendStatics(d, b);
     };
     return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -31,7 +29,7 @@ var Position = /** @class */ (function () {
         else {
             return {
                 suji: Math.abs(position.suji - this.suji),
-                dan: -Math.abs(Number(position.dan) - Number(this.dan)), //段（縦の位置）は正負反転
+                dan: -Math.abs(Number(position.dan) - Number(this.dan)),
             };
         }
     };

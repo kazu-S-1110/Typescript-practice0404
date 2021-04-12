@@ -26,3 +26,5 @@
 // import tupleSample from './array/tuple';
 // arraySample();
 // tupleSample();
+import callbackSample from './asynchronous/callback'
+callbackSample()

@@ -3,6 +3,10 @@
 // import genericsAdvancedSample from './generics/advanced';
 // // genericsBasicSample();
 // genericsAdvancedSample();
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
 // import { logMessage } from './function/basic';
 // import {
 //   isUserSignedIn,
@@ -24,3 +28,5 @@
 // import tupleSample from './array/tuple';
 // arraySample();
 // tupleSample();
+var callback_1 = __importDefault(require("./asynchronous/callback"));
+callback_1.default();
