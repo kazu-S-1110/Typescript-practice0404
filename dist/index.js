@@ -28,5 +28,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // import tupleSample from './array/tuple';
 // arraySample();
 // tupleSample();
-var callback_1 = __importDefault(require("./asynchronous/callback"));
-callback_1.default();
+// import callbackSample from './asynchronous/callback'
+var promise_1 = __importDefault(require("./asynchronous/promise"));
+// callbackSample()
+promise_1.default();

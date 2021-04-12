@@ -26,5 +26,8 @@
 // import tupleSample from './array/tuple';
 // arraySample();
 // tupleSample();
-import callbackSample from './asynchronous/callback'
-callbackSample()
+// import callbackSample from './asynchronous/callback'
+import promiseSample from './asynchronous/promise'
+// callbackSample()
+promiseSample()
+
